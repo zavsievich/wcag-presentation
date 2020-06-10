@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>WCAG: Как разобраться и не умереть</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="showerStyles/styles.css">
+    <link rel="stylesheet" href="mystyles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+
+<!-- activate dark mode - add .dark-mode -->
+
+<body class="shower list dark-mode">
+    <header class="caption">
+        <h1>WCAG: Как разобраться и не умереть</h1>
+        <p>Захар Авсиевич, EffectiveSoft</p>
+    </header>
+
+    <section class="slide" style="padding: 0;">
+        <img src="pictures/me.jpg" alt="Захар Авсиевич">
+    </section>
+
+    <section class="slide" id="cover" style="padding: 0;">
+        <img src="pictures/hero.jpg" alt="WCAG: Как разобраться и не умереть">
+    </section>
+
+    <section class="slide centered dis-slide">
+        <dl>
+            <dt class="ttu">
+                Веб-доступность
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="universal-access"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 456c-114.953 0-208-93.029-208-208 0-114.953 93.029-208 208-208 114.953 0 208 93.029 208 208 0 114.953-93.029 208-208 208zm143.594-286.66c2.538 10.75-4.119 21.522-14.869 24.061-29.865 7.051-57.839 13.286-85.597 16.751.679 111.33 12.654 128.456 26.969 165.116 4.823 12.346-1.275 26.265-13.622 31.087-12.34 4.823-26.263-1.27-31.087-13.622-9.559-24.467-18.089-42.949-23.805-85.12h-3.164c-5.721 42.206-14.269 60.706-23.805 85.12-4.816 12.329-18.721 18.451-31.087 13.623-12.346-4.823-18.445-18.741-13.623-31.088 14.33-36.686 26.29-53.837 26.969-165.116-27.758-3.465-55.732-9.699-85.597-16.751-10.75-2.538-17.407-13.311-14.869-24.061 2.539-10.75 13.312-17.405 24.061-14.869 104.768 24.736 134.447 24.701 239.066 0 10.749-2.538 21.522 4.118 24.06 14.869zm-181.788-43.146C217.806 113.1 234.906 96 256 96s38.194 17.1 38.194 38.194-17.1 38.194-38.194 38.194-38.194-17.101-38.194-38.194z"
+                        class=""></path>
+                </svg>
+            </dt>
+            <dd>
+                это набор требований, методов и технологий разработки интерфейсов, которые делают их доступными <span
+                    class="accent">для всех
+                    пользователей.</span>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Про людей 
+        </h2>
+    </section>
+
+    <section class="slide gallery-slide">
+        <img class="disabled-1 cover" src="pictures/disabled-1.jpg" alt="">
+        <img class="disabled-2 next" src="pictures/disabled-2.jpg" alt="">
+        <img class="disabled-3 next" src="pictures/disabled-3.jpg" alt="">
+        <img class="disabled-4 next" src="pictures/disabled-4.jpg" alt="">
+        <img class="disabled-5 next" src="pictures/disabled-5.jpg" alt="">
+        <img class="disabled-6 next" src="pictures/disabled-6.jpg" alt="">
+        <img class="disabled-7 next" src="pictures/disabled-7.jpg" alt="">
+        <img class="disabled-8 next" src="pictures/disabled-8.jpg" alt="">
+        <img class="disabled-9 next" src="pictures/disabled-9.jpg" alt="">
+        <p class="copyright">
+            <a href="https://disabilityrightsflorida.org/">We protect the civil rights of people with disabilities in Florida.</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Для людей 
+        </h2>
+    </section>
+
+
+    <section class="slide centered" style="flex-direction: row; justify-content: space-between; padding: 0 4% 0 0;">
+        <img src="pictures/tim.jpg" alt="" style="height: 100%;">
+        <figure style="padding-left: 9%;">
+            <blockquote>
+                <p>
+                    Сила Интернета заключается в его универсальности. Всеобщая доступность, невзирая на ограничения
+                    здоровья, является непременным его условием
+                </p>
+            </blockquote>
+            <figcaption>
+                Tim Berners-Lee, директор W3C и создатель Всемирной паутины
+            </figcaption>
+        </figure>
+        <p class="copyright">
+            <a
+                href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%2591%25D0%25B5%25D1%2580%25D0%25BD%25D0%25B5%25D1%2580%25D1%2581-%25D0%259B%25D0%25B8%2C_%25D0%25A2%25D0%25B8%25D0%25BC&psig=AOvVaw35Rla4YDenlc-Xn9F98DRZ&ust=1585557260123000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCLi6t7qjv-gCFQAAAAAdAAAAABAe">
+                Бернерс-Ли, Тим — Википедия
+            </a>
+        </p>
+    </section>
+
+    <!-- <section class="slide dis-slide">
+        <h2>Виды нарушений</h2>
+        <ul>
+            <li>
+                Визуальные
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="low-vision"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                        d="M569.344 231.631C512.96 135.949 407.81 72 288 72c-28.468 0-56.102 3.619-82.451 10.409L152.778 10.24c-7.601-10.858-22.564-13.5-33.423-5.9l-13.114 9.178c-10.86 7.601-13.502 22.566-5.9 33.426l43.131 58.395C89.449 131.73 40.228 174.683 6.682 231.581c-.01.017-.023.033-.034.05-8.765 14.875-8.964 33.528 0 48.739 38.5 65.332 99.742 115.862 172.859 141.349L55.316 244.302A272.194 272.194 0 0 1 83.61 208.39l119.4 170.58h.01l40.63 58.04a330.055 330.055 0 0 0 78.94 1.17l-189.98-271.4a277.628 277.628 0 0 1 38.777-21.563l251.836 356.544c7.601 10.858 22.564 13.499 33.423 5.9l13.114-9.178c10.86-7.601 13.502-22.567 5.9-33.426l-43.12-58.377-.007-.009c57.161-27.978 104.835-72.04 136.81-126.301a47.938 47.938 0 0 0 .001-48.739zM390.026 345.94l-19.066-27.23c24.682-32.567 27.711-76.353 8.8-111.68v.03c0 23.65-19.17 42.82-42.82 42.82-23.828 0-42.82-19.349-42.82-42.82 0-23.65 19.17-42.82 42.82-42.82h.03c-24.75-13.249-53.522-15.643-79.51-7.68l-19.068-27.237C253.758 123.306 270.488 120 288 120c75.162 0 136 60.826 136 136 0 34.504-12.833 65.975-33.974 89.94z" />
+                </svg>
+            </li>
+            <li class="next">
+                Аудиальные
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="deaf"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M216 260c0 15.464-12.536 28-28 28s-28-12.536-28-28c0-44.112 35.888-80 80-80s80 35.888 80 80c0 15.464-12.536 28-28 28s-28-12.536-28-28c0-13.234-10.767-24-24-24s-24 10.766-24 24zm24-176c-97.047 0-176 78.953-176 176 0 15.464 12.536 28 28 28s28-12.536 28-28c0-66.168 53.832-120 120-120s120 53.832 120 120c0 75.164-71.009 70.311-71.997 143.622L288 404c0 28.673-23.327 52-52 52-15.464 0-28 12.536-28 28s12.536 28 28 28c59.475 0 107.876-48.328 108-107.774.595-34.428 72-48.24 72-144.226 0-97.047-78.953-176-176-176zm268.485-52.201L480.2 3.515c-4.687-4.686-12.284-4.686-16.971 0L376.2 90.544c-4.686 4.686-4.686 12.284 0 16.971l28.285 28.285c4.686 4.686 12.284 4.686 16.97 0l87.03-87.029c4.687-4.688 4.687-12.286 0-16.972zM168.97 314.745c-4.686-4.686-12.284-4.686-16.97 0L3.515 463.23c-4.686 4.686-4.686 12.284 0 16.971L31.8 508.485c4.687 4.686 12.284 4.686 16.971 0L197.256 360c4.686-4.686 4.686-12.284 0-16.971l-28.286-28.284z" />
+                </svg>
+            </li>
+            <li class="next">
+                Моторные
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="accessible-icon"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M423.9 255.8L411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5 0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7-42.6-24.8-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6 0 0 139.3 80.9 139.5 81.1 16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7zm-64.9-154c28.1 0 50.9-22.8 50.9-50.9C409.9 22.8 387.1 0 359 0c-28.1 0-50.9 22.8-50.9 50.9 0 28.1 22.8 50.9 50.9 50.9zM179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3z" />
+                </svg>
+            </li>
+            <li class="next">
+                Когнитивные
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z" />
+                </svg>
+            </li>
+        </ul>
+        <p class="copyright">
+            <a
+                href="https://medium.com/@fokinatatiana/%D0%BA%D0%BE%D0%BC%D1%83-%D0%BD%D1%83%D0%B6%D0%BD%D0%B0-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%B2-%D0%B2%D0%B5%D0%B1%D0%B5-6a86dc3e532f">
+                Кому нужна доступность в вебе</a>
+        </p>
+    </section> -->
+
+    <section class="slide">
+        <h2 class="shout shrink" style="color: white;">
+            <span style="color: var(--c-orange)">WCAG</span>
+            <br>
+            <span class="next" style="font-size: 3rem;">The Web Content Accessibility Guidelines</span>
+        </h2>
+    </section>
+
+    <section class="slide centered">
+        <dl>
+            <dt>WCAG 📖</dt>
+            <dd>Рекомендации по обеспечению доступности веб-контента</dd>
+        </dl>
+    </section>
+
+    <section class="slide" style="background-color: #f2f2f2;">
+        <img src="pictures/levels.jpeg" alt="" class="">
+        <p class="copyright">
+            <a
+                href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.levelaccess.com%2Fwcag-a-and-wcag-aa-conformance%2F&psig=AOvVaw2idz6U8gyNZYgSHw45L2QG&ust=1585386098425000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOitrIunuugCFQAAAAAdAAAAABAD">
+                The Difference Between WCAG A and WCAG AA Conformance? - Level Access
+            </a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            4 принципа
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Воспринимаемость</h2>
+        <p>Информация и компоненты интерфейса должны быть представлены пользователю в тех формах, которые он способен
+            воспринимать.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Осуществимость</h2>
+        <p>Пользователь должен иметь возможность воспользоваться компонентами интерфейса и навигацией.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Ясность</h2>
+        <p>Информация и работа пользовательского интерфейса должны быть понятными.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Совместимость</h2>
+        <p>Содержимое должно быть доступно через разные браузеры, включая специальные браузеры для людей с ограниченными
+            возможностями.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Уровни доступности</h2>
+        <ol style="font-size: 2.4rem;">
+            <li>A</li>
+            <li>AA</li>
+            <li>AAA</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Уровень A</h2>
+        <p>
+            Начальный. Если рекомендации не выполнены, вспомогательные технологии не смогут полностью воспринимать
+            содержимое страницы.
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Уровень AA</h2>
+        <p>
+            Идеальная поддержка. Требуется для веб-сайтов правительства и государственных органов ЕС, а также лежит в
+            основе закона ADA Compliance.
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Уровень AAA</h2>
+        <p>
+            Поддержка высокого уровня. Обычно это используется сайтами, которые обслуживают специализированную
+            аудиторию.
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink ttu">
+            закон
+        </h2>
+        <p class="copyright">
+            <a href="https://medium.com/web-standards/a11y-and-law-a81dd9dd5fc8">Доступность и закон</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Евросоюз 🇪🇺</h2>
+        <ul style="font-size: 2.5rem;">
+            <li>Директива о веб-доступности 🧑‍⚖️</li>
+            <li>Европейский закон о доступности 🧑‍⚖️</li>
+            <li>Европейский стандарт EN 301 549 📖</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Директива о веб-доступности («Web Accessibility Directive»)</h2>
+        <p>Обязаны исполнять все государственные учреждения, а также коммерческие компании, которые которые сотрудничают
+            с государством</p>
+        <p>
+            Требования: WCAG 2.0 AA
+        </p>
+        <p class="copyright">
+            <a href="http://nda.ie/Publications/Communications/EU-Web-Accessibility-Directive/">Европейская директива о
+                веб-доступности.</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Европейский закон о доступности (European Accessibility Act — EAA)</h2>
+        <p>Обязаны исполнять все государственные и коммерческие компании, которые создают информационно-коммуникационные
+            технологии.
+            <br>
+            2022 - Появятся документы о регулировании закона
+            <br>
+            2025 - Все приложения должны быть доступными
+        </p>
+        <p>
+            Требования: WCAG 2.0 (WCAG 2.1) (AA)
+        </p>
+        <p class="copyright">
+            <a href="https://ec.europa.eu/social/main.jsp?catId=1202">Европейский закон о доступности.</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Европейский стандарт EN 301 549 (Standard EN 301 549 — EN 301 549)</h2>
+        <p>Стандарт даёт только рекомендации. Он становится обязательным, когда на него ссылается документ с юридической
+            силой. Это может быть Директива о веб-доступности или Европейский закон о доступности.</p>
+        <p>
+            Основан на WCAG 2.0 AA
+        </p>
+        <p class="copyright">
+            <a href="http://mandate376.standards.eu/standard">Текст Стандарта.</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>США 🇺🇸</h2>
+        <ul style="font-size: 2.5rem;">
+            <li>Раздел 508 🧑‍⚖️</li>
+            <li>ADA Compliance 🧑‍⚖️</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Раздел 508 (Section 508)</h2>
+        <p>Обязаны исполнять федеральные агентства и любые компании, которые сотрудничают с ними. Ими могут быть частные
+            фирмы из США и других стран ( + любые организации, получающие субсидии от государства)</p>
+        <p>
+            Требования: WCAG 2.0 AA
+        </p>
+        <p class="copyright">
+            <a
+                href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards">Текст
+                Раздела 508.</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Закон об американцах-инвалидах (ADA — Americans with Disabilities Act)</h2>
+        <p>Любые коммерческие и некоммерческие организации, которые оказывают услуги большому числу людей <br>
+            !Общественные места и коммерческие объекты!</p>
+        <p>
+            Требования: WCAG 2.0 AA
+        </p>
+        <p class="copyright">
+            <a href="https://www.ada.gov/2010_regs.htm">Текст Закона об американцах-инвалидах.</a>
+        </p>
+    </section>
+
+    <!-- <section class="slide centered">
+        <img src="pictures/a11y_pressure_statistics.png" alt="">
+        <p class="copyright">
+            <a
+                href="https://blog.usablenet.com/usablenet-releases-its-2019-ada-web-accessibility-and-app-lawsuit-report?utm_campaign=2019%20ADA%20Website%20Lawsuit%20Recap%20Report%20-Dec&utm_source=hs_email&utm_medium=email&utm_content=80967208&_hsenc=p2ANqtz-8qu3UJejwByDnB34Rk_K0iHgO2E_V2umqTf002aiEg9h_C054SdHdtkGHw0NZaScd1TLzCC6v9N-ZRXPOc3YrKBJGkUA&_hsmi=80967208">
+                UsableNet Releases its 2019 ADA Web Accessibility and App Lawsuit Report
+            </a>
+        </p>
+    </section> -->
+
+    <section class="slide">
+        <h2 class="shout">Спасибо!</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout"><a href="https://t.me/zavsievich">@ZAVSIEVICH</a></h2>
+    </section>
+
+    <section class="slide">
+        <h2>Ссылки</h2>
+        <ul>
+            <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices 1.1</a></li>
+            <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></li>
+            <li><a href="https://medium.com/web-standards/heading-levels-229def4e0e33">Важность уровней заголовков для
+                    вспомогательных технологий</a>
+            </li>
+            <li><a
+                    href="https://medium.com/@fokinatatiana/%D1%87%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D0%B8-95826028e46e">Чек-лист
+                    доступности</a></li>
+            <li><a href="https://youtu.be/4ragpIHJ6r0">Разработка доступных интерфейсов, Сергей Кригер</a></li>
+            <li><a href="https://youtu.be/KAK-WAb9vow">Людоедский интерфейс, Вадим Макеев</a></li>
+            <li><a href="https://youtu.be/bDYEnNzprzE">Семантика для циников, Вадим Макеев</a></li>
+        </ul>
+    </section>
+
+    <section class="slide centered" style="background-color: #ffffff;">
+        <img src="pictures/qr-link.png" alt="Основы WAI-ARIA" width="50%">
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Сделано в Shower</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="highlight/index.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="showerJS/shower.min.js"></script>
+    <script src="myscript.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>

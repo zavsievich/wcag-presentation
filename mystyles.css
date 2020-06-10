@@ -1,0 +1,390 @@
+/* Variables */
+
+:root {
+    --c-blue: #005faf;
+    --c-w3: #0B5C9A;
+    --c-orange: #FF7F00;
+    --c-ocean: #092C47;
+    --c-vista: #fdfcfa;
+}
+
+svg {
+    fill: currentColor;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+dt {
+    font-size: 2rem;
+    color: var(--c-orange);
+    font-weight: bold;
+}
+
+.fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pic-centered {
+    display: block;
+    margin: 0 auto;
+}
+
+#me {
+    display: flex;
+    padding: 0;
+}
+
+.accent {
+    color: var(--c-orange);
+}
+
+.accent-slide {
+    background-color: var(--c-ocean);
+    color: white;
+}
+
+.accent-slide h2 {
+    color: var(--c-orange);
+}
+
+.dark-mode .slide {
+    background-color: var(--c-ocean);
+    color: white;
+}
+
+.dark-mode h2 {
+    color: var(--c-orange);
+}
+
+.dark-mode a {
+    color: var(--c-vista);
+    background-image: linear-gradient( to top, var(--c-vista) 0.06em, transparent 0.06em ) !important;
+}
+
+.progress::before {
+    background-color: var(--c-vista);
+}
+
+.slide {
+    padding-bottom: 75px;
+}
+
+.slide--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+.centered-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.tac {
+    text-align: center;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.dis-slide li, .dis-slide dt {
+    display: flex;
+    align-items: center;
+}
+
+.dis-slide svg,
+.dis-slide img {
+    height: 36px;
+    width: 36px;
+    display: block;
+    margin-left: 15px;
+    color: var(--c-orange);
+}
+
+.dom-img {
+    /* width: 90%; */
+    /* border: 3px solid var(--c-orange); */
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.83);
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: left;
+    /* height: 340px; */
+}
+
+ul {
+    color: var(--c-ocean);
+}
+
+.dark-mode ul {
+    color: #ffffff;
+}
+
+.red {
+    color: red;
+}
+
+.slide .shout--mini {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    font-size: 100px;
+    transform: translateY(-50%);
+}
+
+.shout, .shout--mini {
+    font-size: 115px !important;
+}
+
+.badge a {
+    background-image: none !important;
+    background-color: var(--c-ocean);
+}
+
+.full {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-slide img {
+    position: absolute;
+    width: 25%;
+}
+
+.gallery-slide .disabled-1 {
+    width: auto;
+}
+
+.disabled-2 {
+    top: 10%;
+    left: 0;
+}
+
+.disabled-3 {
+    top: 10%;
+    left: 25%;
+}
+
+.disabled-4 {
+    top: 10%;
+    left: 50%;
+}
+
+.disabled-5 {
+    top: 10%;
+    left: 75%;
+    z-index: 1;
+}
+
+.disabled-6 {
+    /* top: 50%; */
+    bottom: 10%;
+    left: 0%;
+}
+
+.disabled-7 {
+    /* top: 50%; */
+    bottom: 10%;
+    left: 25%;
+}
+
+.disabled-8 {
+    /* top: 50%; */
+    bottom: 10%;
+    left: 50%;
+}
+
+.disabled-9 {
+    /* top: 50%; */
+    bottom: 10%;
+    left: 75%;
+}
+
+#ic-logo {
+    color: var(--c-blue);
+    width: 100%;
+}
+
+.wtf {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.crossed {
+    position: relative;
+}
+
+.crossed::before {
+    content: "";
+    background-color: red;
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    transform: rotate(135deg);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slide pre code:not(:only-child)::before {
+    content: none;
+}
+
+pre {
+    -moz-tab-size: 0;
+    tab-size: 0;
+}
+
+.flex-code {
+    display: flex !important;
+}
+
+.flex-col {
+    flex: 0 0 40%
+}
+
+.slide::after {
+    position: absolute;
+    top: 0;
+    left: 875px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    width: var(--ribbon-size);
+    height: calc(var(--ribbon-size) * 1.7);
+    /* background-image: url(ribbon.svg); */
+    background: var(--color-grey) !important;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 25px !important;
+    font-weight: 600;
+    counter-increment: slide;
+    content: counter(slide);
+    text-align: center;
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+    border: 0.5rem solid var(--c-ocean);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkbox:focus {
+    outline: 4px solid rgba(0,125,250,0.6);
+    outline-offset: 3px;
+}
+
+.checkbox.check {
+    background-color: var(--c-orange);
+}
+
+.checkbox.check::after {
+    content: '';
+    position: absolute;
+    display: block;
+    /* width: 2.5rem;
+    height: 2.5rem; */
+    width: 45px;
+    height: 20px;
+    border-left: 0.3rem solid var(--c-ocean);
+    border-bottom: 0.3rem solid var(--c-ocean);
+    border-bottom-left-radius: 5px;
+    background-color: transparent;
+    /* background-color: black; */
+    transform: translateX(-50%) translateY(-67%) rotate(310deg);
+    left: 50%;
+    top: 50%;
+}
+
+/* HIGHLIGHT */
+
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+
+.hljs {
+    display: block;
+    background: white;
+    padding: 0.5em;
+    color: #333333;
+    overflow-x: auto;
+}
+
+.hljs-comment, .hljs-meta {
+    color: #969896;
+}
+
+.hljs-string, .hljs-variable, .hljs-template-variable, .hljs-strong, .hljs-emphasis, .hljs-quote {
+    color: #df5000;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-type {
+    color: #a71d5d;
+}
+
+.hljs-literal, .hljs-symbol, .hljs-bullet, .hljs-attribute {
+    color: #0086b3;
+}
+
+.hljs-section, .hljs-name {
+    color: #63a35c;
+}
+
+.hljs-tag {
+    color: #333333;
+}
+
+.hljs-title, .hljs-attr, .hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo {
+    color: #795da3;
+}
+
+.hljs-addition {
+    color: #55a532;
+    background-color: #eaffea;
+}
+
+.hljs-deletion {
+    color: #bd2c00;
+    background-color: #ffecec;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
