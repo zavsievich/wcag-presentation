@@ -100,6 +100,13 @@ dt {
     margin-bottom: 2.3rem;
 }
 
+.principle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5%;
+}
+
 .screen-advice {
     background-color: rgba(0, 0, 0, 0.83);
     position: absolute;
@@ -222,7 +229,7 @@ ul {
 }
 
 .a11y-desc dl {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 
