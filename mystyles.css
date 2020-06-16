@@ -3,7 +3,8 @@
 :root {
     --c-blue: #005faf;
     --c-w3: #0B5C9A;
-    --c-orange: #FF7F00;
+    --c-orange: rgb(255, 127, 0);
+    --c-orange-alfa: rgba(255, 127, 0, 0.5);
     --c-ocean: #092C47;
     --c-vista: #fdfcfa;
 }
@@ -27,6 +28,9 @@ dt {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .pic-centered {
@@ -114,7 +118,7 @@ dt {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
 }
 
@@ -343,9 +347,9 @@ pre {
     top: 0;
     left: 875px;
     box-sizing: border-box;
-    padding-top: 15px;
+    padding-top: 10px;
     width: var(--ribbon-size);
-    height: calc(var(--ribbon-size) * 1.7);
+    height: calc(var(--ribbon-size) * 1.4);
     /* background-image: url(ribbon.svg); */
     background: var(--color-grey) !important;
     background-size: cover;
@@ -355,6 +359,11 @@ pre {
     counter-increment: slide;
     content: counter(slide);
     text-align: center;
+}
+
+.dark-mode .slide::after {
+    background: var(--c-orange-alfa) !important;
+    color: var(--c-vista);
 }
 
 /* HIGHLIGHT */
